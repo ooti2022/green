@@ -2,6 +2,9 @@
 using System.CommandLine.Invocation;
 using Kiosk.App;
 
+// This is an example program that shows how to handle CLI arguments
+// with System.CommandLine. Feel free to throw it all away.
+//
 // To run this program, use the embedded Terminal, and do this:
 // > cd Kiosk.App
 // > dotnet run -- <command> <options>
@@ -18,6 +21,9 @@ var rootCommand = new RootCommand
         if (sayHi)
         {
             Console.WriteLine("hi!");
+        }
+        else {
+            Console.WriteLine("Dotnet works!");
         }
     })
 };
