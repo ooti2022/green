@@ -19,4 +19,8 @@ class Read {
 
         return File.ReadAllText(rootDir + "questions.txt");
     }
+
+    public Dictionary<string, string[]> GetQuestion(){
+        return new Dictionary<string, string[]>();
+    }
 }
