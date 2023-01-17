@@ -13,6 +13,9 @@ public class Report {
             title="question 1", answer_1= "YES", answer_2= "NO"
         };
 
+// call Results.get_data
+        var re = new Results();
+        re.Run();
         string jsondata = JsonConvert.SerializeObject(dummyJson);
 
         // ELham
