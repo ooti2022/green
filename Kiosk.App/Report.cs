@@ -16,13 +16,12 @@ public class Report {
 // call Results.get_data
         var re = new Results();
         re.Run();
-        string jsondata = JsonConvert.SerializeObject(dummyJson);
+        //string jsondata = JsonConvert.SerializeObject(dummyJson);
 
         // ELham
-         //var workbook = new Workbook(jsondata);
-        // workbook.Save("Output.html");
+        var workbook = new Workbook("path.json");
+        workbook.Save("Output.html");
 
-        // var workbook = new Workbook(jsondata);
-        // workbook.Save("s.html");
+        
     }
 }
